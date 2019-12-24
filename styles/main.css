@@ -225,8 +225,8 @@ html {
   font-size: 20px;
 }
 
-h1, h2, h3 {
-  font-family: Helvetica, sans-serif;
+h1, h2 {
+  font-family: 'futura', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
 h1 {
@@ -241,7 +241,7 @@ h3 {
   font-size: 1rem;
 }
 
-a, p, li, button {
+a, p, li, button, h3 {
   font-family: 'raleway', 'Trebuchet MS', Helvetica, sans-serif;
 }
 
@@ -722,7 +722,7 @@ img {
 }
 
 .footer {
-  height: 350px;
+  height: 375px;
   position: relative;
   z-index: 1;
   background: #1e1a34;
@@ -760,12 +760,15 @@ img {
   color: white;
 }
 
-.footer__headerText .footer_paragraph, .footer__headerText button {
-  margin-top: 34px;
+.footer__headerText .footer__paragraph, .footer .buyNow2 {
+  margin-top: 50px;
   text-align: center;
+  margin-top: 50px;
 }
 
-.footer__button {
+.footer .buyNow2 {
   margin: 0 auto;
+  display: block;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=main.css.map */

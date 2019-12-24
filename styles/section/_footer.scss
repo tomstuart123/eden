@@ -1,5 +1,5 @@
 .footer {
-    height: 350px;
+    height: 375px;
     position: relative;
     z-index: 1;
     background: $darkColour;
@@ -32,11 +32,14 @@
 }
 
 
-.footer__headerText .footer_paragraph, .footer__headerText button {
-    margin-top: 34px;
+.footer__headerText .footer__paragraph, .footer .buyNow2 {
+    margin-top: 50px;
     text-align: center;
+    margin-top: 50px;
 }
 
-.footer__button {
+.footer .buyNow2 {
     margin: 0 auto;
+    display: block;
+    margin-top: 50px;
 }
