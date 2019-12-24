@@ -1,0 +1,33 @@
+
+
+.buyNow1 {
+    background: $darkColour;
+    color: white;
+    padding: 2.5%;
+    font-size: 0.9rem;
+    border: none;
+    width: 150px;
+}
+
+.buyNow1:hover {
+    background: $darkColour;
+    color: white;
+    border: 1px solid $darkColour;
+}
+
+.buyNow2 {
+    background: $accentColourMid;
+    font-weight: bold;
+    color: $darkColour;
+    font-size: 0.8rem;
+    border: none;
+    width: 215px;
+    height: 50px;
+}
+
+.buyNow2:hover {
+    background: white;
+    color: $darkColour;
+    border: 1px solid $accentColourMid;
+}
+

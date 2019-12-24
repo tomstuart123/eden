@@ -1,0 +1,38 @@
+.howItWorksSection {
+    height: 500px;
+    background: $accentColourLight;
+    padding: 50px;
+}
+
+.howItWorksSection__header, .howItWorksSection__paragraph {
+    text-align: center;
+}
+
+.howItWorksSection__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.howItWorksSection__text h3 {
+    margin-top: 50px;
+}
+
+.howItWorksSection__paragraph {
+    margin-top: 30px;
+
+}
+
+.howItWorksSection li {
+    margin-top: 20px;
+}
+
+.noteParagraph {
+    font-size: 0.9rem;
+}
+
+
+
+

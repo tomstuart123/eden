@@ -1,0 +1,42 @@
+.footer {
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    background: $darkColour;
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer h2 {
+    color: rgb(255,255,255);
+}
+
+
+// text
+
+.footer__headerContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__headerText {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    color: rgb(255,255,255);
+}
+
+
+.footer__headerText .footer_paragraph, .footer__headerText button {
+    margin-top: 34px;
+    text-align: center;
+}
+
+.footer__button {
+    margin: 0 auto;
+}

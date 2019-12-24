@@ -1,0 +1,22 @@
+.aboutSection {
+    height: 350px;
+    background: $accentColourLight;
+    padding: 50px;
+}
+
+.aboutSection__header, .aboutSection__paragraph {
+    text-align: center;
+}
+
+.aboutSection__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.aboutSection__paragraph {
+    margin-top: 40px;
+
+}

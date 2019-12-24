@@ -1,0 +1,65 @@
+/* SECTION TOP */
+.headerSection {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    // background: linear-gradient( rgba(38, 38, 38, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    background: linear-gradient( rgba(38, 38, 38, 0.5), rgba(9, 8, 16, 0.5) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    // background: linear-gradient( rgba(92, 92, 92, 0.5),rgb(17, 15, 30) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.headerSection__headerContent {
+    display: flex;
+    justify-content: flex-start;
+    height: 550px;
+}
+
+.headerSection__headerText {
+    
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    color: rgb(255,255,255);
+}
+
+.headerSection__headerMessageArea {
+
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.headerSection__headerButtonArea {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.headerSection__header {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.headerSection__subHeader {
+    font-size: 1.2rem;
+    color: rgb(223, 223, 223);
+    text-align: left;
+}
+
+.headerSection__headerText h2 {
+    margin-top: 10px;
+}
+
+
+

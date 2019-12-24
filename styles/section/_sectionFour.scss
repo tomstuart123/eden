@@ -1,0 +1,22 @@
+.imageSection {
+    background: linear-gradient( rgba(38, 38, 38, 0.5), rgba(9, 8, 16, 0.5) ), url('../assets/lifestylePics/sam-manns-p0ZvBVpW3KY-unsplash.jpg');
+    // background: linear-gradient( rgba(92, 92, 92, 0.5),rgb(17, 15, 30) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imageSection__paragraph {
+    color: rgb(239, 239, 239);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.quote {
+    font-style: italic;
+     margin-top: 30px;
+}
+
+.imageSection span {
+    font-size: 1.5rem;
+}

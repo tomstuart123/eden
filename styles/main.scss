@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+// 2. Vendors
+@import
+  'setUp/mixins',
+  'setUp/setUp',
+  'setUp/wrapper';
+
+// 3. Base stuff
+@import
+  'base/colours',
+  'base/typography';
+
+  @import
+  'layout/nav',
+  'layout/sectionTop';
+
+// 5. Components
+@import
+  'components/image',
+  'components/mobileNav',
+  'components/button';
+
+// 6. Page-specific styles
+@import
+  'section/sectionOne.scss',
+  'section/sectionTwo.scss',
+  'section/sectionThree.scss',
+  'section/sectionFour.scss',
+  'section/sectionFive.scss',
+  'section/footer.scss';
