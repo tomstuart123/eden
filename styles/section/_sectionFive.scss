@@ -1,5 +1,5 @@
 .howItWorksSection {
-    height: 500px;
+    height: 675px;
     background: $accentColourLight;
     padding: 50px;
 }
@@ -13,24 +13,46 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
+
 }
 
 .howItWorksSection__text h3 {
-    margin-top: 50px;
-}
-
-.howItWorksSection__paragraph {
-    margin-top: 30px;
+    margin: 75px 0;
+    margin-bottom: 100px;
+    text-align: center;
 
 }
 
-.howItWorksSection li {
-    margin-top: 20px;
+
+
+.howItWorksSection__iconGallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.noteParagraph {
-    font-size: 0.9rem;
+.howItWorksSection__galleryIcon {
+    width: 150px;
+
+}
+
+.howItWorksSection .imageContainer {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+.howItWorksSection__figCaption {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center; 
+}
+
+.howItWorksSection__button {
+    margin: 40px auto;
+    margin-top: 75px;
+    // height: 150px;
+
 }
 
 
