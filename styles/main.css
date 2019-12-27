@@ -477,7 +477,8 @@ img {
 
 @media only screen and (max-width: 450px) {
   .benefitSection__toggleForm {
-    display: none;
+    text-align: center;
+    bottom: 0px;
   }
 }
 
@@ -503,6 +504,13 @@ img {
   background: #1f2d2e;
 }
 
+@media only screen and (max-width: 450px) {
+  .toggleLabel::before {
+    top: -55px;
+    right: 0px;
+  }
+}
+
 /* Make the middle of the toggle switch */
 .toggleLabel::after {
   content: "";
@@ -515,6 +523,13 @@ img {
   right: 280px;
 }
 
+@media only screen and (max-width: 450px) {
+  .toggleLabel::after {
+    top: -51px;
+    right: 65px;
+  }
+}
+
 /* Change the background color when the toggle is checked */
 [type="checkbox"]:checked + .toggleLabel::before {
   background: #ff8d6d;
@@ -523,6 +538,13 @@ img {
 /* Change the position of middle of toggle switch */
 [type="checkbox"]:checked + .toggleLabel::after {
   right: 220px;
+}
+
+@media only screen and (max-width: 450px) {
+  [type="checkbox"]:checked + .toggleLabel::after {
+    top: -51px;
+    right: 5px;
+  }
 }
 
 /* Changes the background color of the toggle switch when focused (for accessibility) */
@@ -1053,6 +1075,12 @@ img {
 @media only screen and (max-width: 700px) {
   .benefitSection {
     height: 1350px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .benefitSection {
+    height: 1410px;
   }
 }
 

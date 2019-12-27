@@ -8,6 +8,9 @@
      @include media(700px) {
        height: 1350px;
      }
+     @include media(450px) {
+       height: 1410px;
+     }
 }
 
 .benefitSection__header {
