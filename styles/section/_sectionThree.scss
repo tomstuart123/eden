@@ -9,6 +9,12 @@
 
     background-size: cover;
     background-position: center;
+    @include media(750px) {
+       height: 775px;
+     }
+     @include media(450px) {
+       height: 825px;
+     }
 }
 
 .productSection__backgroundFirst {
@@ -25,6 +31,9 @@
 .productSection__header {
     margin-top: 0px;
     margin-bottom: 75px;
+   @include media(750px) {
+       margin-bottom: 50px;
+     }
 }
 
 // text
@@ -33,10 +42,17 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    @include media(750px) {
+       flex-wrap: wrap;
+     }
 }
 
 .productSection__headerImage { 
     width: 50%;
+    @include media(750px) {
+       width: 100%;
+
+     }
 }
 
 .productSection__headerText {
@@ -47,6 +63,12 @@
     flex-direction: column;
     padding: 0 8%;
     color:rgb(30, 26, 52);
+    @include media(750px) {
+       width: 100%;
+       text-align: center;
+       margin-top: 30px;
+       padding: 0 0;
+     }
 }
 
 .productSection__paragraph {
@@ -64,6 +86,10 @@
 
 .productSection__headerText h2, .productSection__headerText button {
     margin-top: 34px;
+     @include media(750px) {
+       margin-top: 0px;
+       margin: 0 auto;
+     }
 }
 
 
@@ -75,14 +101,22 @@
     background: $grayBackground;
     width: 90%;
     border-radius: 5%;
-    height: 450px;
+    height: 425px;
     padding: 40px 0;
+    @include media(950px) {
+       padding-top: 40px;
+        height: 325px;
+     }
+     @include media(750px) {
+       width: 300px;
+       margin: 0 auto;
+     }
 }
 
 .productSection__imageContainer{ 
     margin-left: 15%;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 75%;
+    max-width: 75%;
 }
 
 

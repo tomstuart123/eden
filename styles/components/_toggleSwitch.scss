@@ -1,0 +1,84 @@
+/* Hide Checkbox so that it is still on the page for accessibilty */
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.benefitSection__toggleForm {
+    position: absolute;
+    bottom: 40px;
+    right: 30%;
+    color: gray;
+     @include media(900px) {
+       right: 20%;
+     }
+     @include media(800px) {
+       right: 15%;
+     }
+     @include media(700px) {
+       right: 8%;
+     }
+
+     @include media(600px) {
+       right: 5%;
+     }
+
+     @include media(500px) {
+       right: 0%;
+     }
+
+     @include media(450px) {
+       display: none;
+     }
+    // display: flex;
+    // flex-direction: column;
+}
+
+/* Styles for individual labels */
+.toggleLabel {
+    padding-right: 110px;
+    margin: 15px 0;
+    position: relative;
+    line-height: 40px;
+    font-size: 0.75rem;
+    // width: 50px;
+    text-align: center;
+}
+/* Make the toggle background */
+.toggleLabel::before {
+    content: "";
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    position: absolute;
+    right: 215px;
+    top: -60px;
+    background: #1f2d2e;
+}
+
+/* Make the middle of the toggle switch */
+.toggleLabel::after {
+content: "";
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: rgb(249, 247, 247);
+position: absolute;
+top: -55px;
+right: 280px;
+}
+
+/* Change the background color when the toggle is checked */
+[type="checkbox"]:checked + .toggleLabel::before {
+    background: $accentColourDark;
+}
+/* Change the position of middle of toggle switch */
+[type="checkbox"]:checked + .toggleLabel::after {
+    right: 220px;
+}
+
+/* Changes the background color of the toggle switch when focused (for accessibility) */
+// [type="checkbox"]:active + .toggleLabel::before,
+// [type="checkbox"]:focus + .toggleLabel::before {
+//     background: #EB6856;
+// }

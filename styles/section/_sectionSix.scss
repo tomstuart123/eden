@@ -1,26 +1,44 @@
+.benefitSection {
+    height: 650px;
+    position: relative;
+    @include media(900px) {
+       height: 1000px;
+     }
+
+     @include media(700px) {
+       height: 1350px;
+     }
+}
+
 .benefitSection__header {
-    margin: 60px 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
 }
 
 .benefitSection__subheaderSection {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
-.benefitSection__subheaderOne, .benefitSection__subheaderTwo {
-    width: 300px;
-    text-align: center;
-    margin-bottom: 25px;
-}
+// .benefitSection__subheaderOne, .benefitSection__subheaderTwo {
+//     width: 300px;
+//     text-align: center;
+//     margin-bottom: 25px;
+// }
 
-.benefitSection__subheader {
-    cursor: pointer;
-    width: 75%;
-    margin: 0 auto;
-}
+// .benefitSection__subheader {
+//     cursor: pointer;
+//     width: 75%;
+//     margin: 0 auto;
+// }
 .benefitSection__subheaderThree {
     line-height: 150%;
+    @include media(700px) {
+        text-align: center;
+    }
 }
 
 
@@ -30,6 +48,10 @@
     // height: 100%;
     margin-bottom: 50px;
     justify-content: space-between;
+    @include media(900px) {
+       flex-wrap: wrap;
+     }
+    
 }
 
 // icons section
@@ -39,7 +61,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 50px;
-    width: 55%;
+    width: 60%;
+    @include media(900px) {
+        width: 100%;
+     }
 }
 
 .benefitSection__galleryIcon {
@@ -47,6 +72,10 @@
     flex-direction: row;
     width: 50%;
     margin-top: 50px;
+    @include media(700px) {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .benefitSection__galleryIcon--active {
@@ -56,14 +85,25 @@
 
 .benefitSection__iconGallery .imageContainer {
     width: 80px;
+    height: 75px;
+    @include media(700px) {
+        margin: 0 auto; 
+    }
 }
 
 .benefitSection__iconGallery .textContainer {
     width: 200px;
+    @include media(700px) {
+        width: calc(100%);
+        margin-top: 30px;
+    }
 }
 
 .benefitSection__galleryIcon--active .textContainer {
     width: calc(100% - 80px);
+    @include media(700px) {
+        width: calc(100%);
+    }
 }
 
 
@@ -72,6 +112,9 @@
     width: 100%;
     text-align: left; 
     padding-left: 20px;
+    @include media(700px) {
+        text-align: center; 
+    }
 }
 
 .benefitSection__figCaption span {
@@ -83,25 +126,33 @@
 .benefitSection__imagePart {
     margin-top: 50px;
     width: 35%;
+    @include media(900px) {
+       width: 100%;
+     }
 }
 
 .benefitSection__imageHolder{
     background: $grayBackground;
     width: 100%;
     border-radius: 5%;
-    height: 350px;
+    height: 330px;
     padding: 40px 0;
+    @include media(1050px) {
+       height: 280px;
+     }
 }
 
 .benefitSection__imageHolder .imageContainer {
     width: 90%;
-    // max-height: 100%;
+    max-height: 100%;
     display: block;
-        margin: 0 auto;
-
+    margin: 0 auto;
+    height: 92%;
 
 }
 
 .benefitSection__imageHolder img {
     object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
 }

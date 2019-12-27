@@ -2,7 +2,18 @@
     height: 350px;
     background: $accentColourLight;
     padding: 50px;
+    @include media(900px) {
+       height: 450px;
+     }
+     @include media(750px) {
+       height: 500px;
+     }
+    @include media(450px) {
+       height: 700px;
+     }
+
 }
+
 
 .aboutSection__header, .aboutSection__paragraph {
     text-align: center;

@@ -1,11 +1,14 @@
 .footer {
-    height: 375px;
+    height: 400px;
     position: relative;
     z-index: 1;
     background: $darkColour;
     background-blend-mode: saturation;
     background-size: cover;
     background-position: center;
+    @include media(750px) {
+       height: 500px;
+     }
 }
 
 .footer h2 {
