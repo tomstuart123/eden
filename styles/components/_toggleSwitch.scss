@@ -30,6 +30,8 @@
      @include media(450px) {
        text-align: center;
        bottom: 0px;
+       width: 100%;
+
      }
     // display: flex;
     // flex-direction: column;
@@ -42,8 +44,10 @@
     position: relative;
     line-height: 40px;
     font-size: 0.75rem;
-    // width: 50px;
     text-align: center;
+    @include media(450px) {
+          width: 100%;
+     }
 }
 /* Make the toggle background */
 .toggleLabel::before {

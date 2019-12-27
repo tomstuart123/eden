@@ -479,6 +479,7 @@ img {
   .benefitSection__toggleForm {
     text-align: center;
     bottom: 0px;
+    width: 100%;
   }
 }
 
@@ -490,6 +491,12 @@ img {
   line-height: 40px;
   font-size: 0.75rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .toggleLabel {
+    width: 100%;
+  }
 }
 
 /* Make the toggle background */
