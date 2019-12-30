@@ -1,13 +1,16 @@
 .howItWorksSection {
-    height: 675px;
+    height: 700px;
     background: $accentColourLight;
     padding: 50px;
+     @include media(1000px) {
+       height: 740px;
+     }
     @include media(750px) {
-       height: 850px;
+       height: 890px;
      }
 
      @include media(450px) {
-       height: 1150px;
+       height: 1250px;
      }
 }
 
@@ -85,13 +88,24 @@
 }
 
 .howItWorksSection__button {
-    margin: 40px auto;
-    margin-top: 75px;
+    margin: 0px auto;
+    margin-top: 60px;
     // height: 150px;
     @include media(750px) {
         margin-top:35px;
      }
+}
 
+.howToVideo {
+  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  color: $darkColour;
+  margin: 30px auto;
+}
+
+.howToVideo:hover {
+  color: $accentColourDark;
 }
 
 

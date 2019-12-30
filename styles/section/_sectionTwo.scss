@@ -1,15 +1,16 @@
 .aboutSection {
-    height: 350px;
+    height: 370px;
     background: $accentColourLight;
     padding: 50px;
     @include media(900px) {
        height: 450px;
      }
      @include media(750px) {
-       height: 500px;
+       height: 525px;
      }
     @include media(450px) {
-       height: 700px;
+      padding: 50px 0px;
+       height: 660px;
      }
 
 }

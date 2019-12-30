@@ -9,11 +9,14 @@
 
     background-size: cover;
     background-position: center;
-    @include media(750px) {
-       height: 775px;
+    @include media(900px) {
+       height: 1075px;
+     }
+     @include media(650px) {
+       height: 1175px;
      }
      @include media(450px) {
-       height: 825px;
+       height: 1250px;
      }
 }
 
@@ -31,7 +34,7 @@
 .productSection__header {
     margin-top: 0px;
     margin-bottom: 75px;
-   @include media(750px) {
+   @include media(900px) {
        margin-bottom: 50px;
      }
 }
@@ -42,16 +45,20 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    @include media(750px) {
+
+    @include media(900px) {
        flex-wrap: wrap;
+       height: auto;
      }
 }
 
 .productSection__headerImage { 
     width: 50%;
-    @include media(750px) {
+    @include media(1200px) {
+       width: 40%;
+     }
+    @include media(900px) {
        width: 100%;
-
      }
 }
 
@@ -61,9 +68,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 8%;
+    padding-left: 4%;
+     padding-right: 2%;
     color:rgb(30, 26, 52);
-    @include media(750px) {
+    @include media(1200px) {
+       width: 60%;
+     }
+
+    @include media(900px) {
        width: 100%;
        text-align: center;
        margin-top: 30px;
@@ -73,7 +85,19 @@
 
 .productSection__paragraph {
     line-height: 175%;
-    margin-bottom: 40px;
+     @include media(1200px) {
+        font-size: 0.9rem;
+     }
+      @include media(900px) {
+        font-size: 1rem;
+        margin-top: 20px;
+     }
+}
+
+
+.productSection__paragraph a {
+    font-size: 1rem;
+    text-decoration: underline;
 }
 
 
@@ -85,10 +109,11 @@
 // }
 
 .productSection__headerText h2, .productSection__headerText button {
-    margin-top: 34px;
-     @include media(750px) {
-       margin-top: 0px;
+    margin-top: 50px;
+     @include media(900px) {
+
        margin: 0 auto;
+      margin-top: 50px;
      }
 }
 
@@ -101,15 +126,24 @@
     background: $grayBackground;
     width: 90%;
     border-radius: 5%;
-    height: 425px;
-    padding: 40px 0;
-    @include media(950px) {
-       padding-top: 40px;
-        height: 325px;
+    height: 460px;
+    padding: 60px 0;
+    @include media(1200px) {
+       padding-top: 90px;
+       height: 425px;
      }
-     @include media(750px) {
-       width: 300px;
+
+     @include media(900px) {
+       padding-top: 60px;
+       width: 400px;
        margin: 0 auto;
+      margin-top: 20px;
+       height: 400px;
+     }
+     @include media(450px) {
+       width: 90%;
+       height: 300px;
+       padding-top: 45px;
      }
 }
 

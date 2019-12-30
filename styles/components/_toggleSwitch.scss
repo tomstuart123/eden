@@ -2,35 +2,36 @@
 [type="checkbox"] {
     opacity: 0;
     position: absolute;
+
 }
+
 
 .benefitSection__toggleForm {
     position: absolute;
     bottom: 40px;
-    right: 30%;
+    right: 38%;
     color: gray;
+     cursor: pointer; 
      @include media(900px) {
-       right: 20%;
+       right: 30%;
      }
-     @include media(800px) {
+
+     @include media(700px) {
+       right: 25%;
+     }
+
+      @include media(600px) {
        right: 15%;
      }
-     @include media(700px) {
-       right: 8%;
-     }
 
-     @include media(600px) {
-       right: 5%;
-     }
 
-     @include media(500px) {
-       right: 0%;
-     }
+
+
 
      @include media(450px) {
        text-align: center;
        bottom: 0px;
-       width: 100%;
+       width: 70%;
 
      }
     // display: flex;
@@ -39,12 +40,12 @@
 
 /* Styles for individual labels */
 .toggleLabel {
-    padding-right: 110px;
     margin: 15px 0;
     position: relative;
     line-height: 40px;
     font-size: 0.75rem;
     text-align: center;
+        cursor: pointer;
     @include media(450px) {
           width: 100%;
      }
@@ -56,12 +57,12 @@
     height: 40px;
     border-radius: 100px;
     position: absolute;
-    right: 215px;
+    right: 110px;
     top: -60px;
     background: #1f2d2e;
     @include media(450px) {
        top: -55px;
-        right: 0px;
+        right: -10px;
     }
 }
 
@@ -74,10 +75,10 @@ border-radius: 50%;
 background: rgb(249, 247, 247);
 position: absolute;
 top: -55px;
-right: 280px;
+right: 175px;
 @include media(450px) {
        top: -51px;
-        right: 65px;
+        right: 55px;
     }
 }
 
@@ -87,10 +88,10 @@ right: 280px;
 }
 /* Change the position of middle of toggle switch */
 [type="checkbox"]:checked + .toggleLabel::after {
-    right: 220px;
+    right: 115px;
     @include media(450px) {
        top: -51px;
-        right: 5px;
+        right: -5px;
     }
 }
 

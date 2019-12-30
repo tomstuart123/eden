@@ -7,12 +7,14 @@
     <title>EdenCups</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/562ca5702d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
     <header class=headerSection>
         <nav class='headerSection__nav'>
             <section class='headerSection__container wrapper'>
+           
                 <div class='headerSection__logo'>
                     <div class='headerSection__imageContainer logoContainer'>
                         <img src="assets/edenBranding&Product/edenLogoTwo.png"/>
@@ -24,19 +26,36 @@
                             <span class="hamburger-inner"></span>
                         </span>
                     </button>
+                    <ul class="dropdown dropdown-start">
+                        <li><a href="#aboutSection">About us</a></li>
+                        <li><a href="#productSection">Shop Eden Cup</a></li>
+                        <li><a href="#benefitSection">Benefits</a></li>
+                        <li><a href="#howItWorksSection">How it works</a></li>
+                        <li><a href="#footer">Get in contact</a></li>
+                    </ul>
+                    
                 </div>
+                
             </section>
+            
         </nav>
+       
         <div class='headerSection__headerContent wrapper'>
             <div class='headerSection__headerText'>
                 <div class='headerSection__headerMessageArea'>
-                    <h2 class='headerSection__subHeader'>Better Period Care...<h2>
+                    <h2 class='headerSection__subHeader'>Better Period Care..<h2>
                     <h2 class='headerSection__header'>Starts with You!</h2>
-                </div>
-                <div class='headerSection__headerButtonArea'>  
                     <a href='#productSection'>
                         <button class='buyNow2'>SHOP EDEN CUPS</button>
                     </a>
+                </div>
+                <div class='headerSection__headerButtonArea'>  
+                    
+                    <div class='headerSection__logo'>
+                        <div class='headerSection__imageContainer logoContainer'>
+                            <img src="assets/edenBranding&Product/heartLogo2.png" />
+                        </div>
+                    </div>
                 </div>
                 
             </div>
@@ -46,8 +65,9 @@
         <section class='aboutSection section' id='aboutSection'>
             <h2 class='aboutSection__header header'>ABOUT EDEN</h2>
             <div class='aboutSection__text wrapper'>
-                    <p class='aboutSection__paragraph'>We begun Eden as we want Period Care to get better! We want the environment to get better! And we aren't going to stay quiet about it!</p>
-                    <p class='aboutSection__paragraph'> Our first product - the EDEN CUP - is a menstrual cup designed around you! We believe the more people who switch to menstrual cups, the more the planet and womenkind benefit. Win-Win!</p>
+                    <p class='aboutSection__paragraph'>We launched Eden as we want to give women environmental choices for their period care! The EDEN CUP is a menstrual cups specifically designed to be comfortable, leak-free and environmentally friendly!</p>
+                    <p class='aboutSection__paragraph'> We believe the more people who switch to menstrual cups, the more the planet and womenkind benefit. So join us for a cleaner, more convenient and cheaper period!</p>
+
             </div>
         </section>
         <section class='productSection section' id='productSection'>
@@ -63,7 +83,9 @@
                 
                 <div class='productSection__headerText'>
                     
-                    <p class='productSection__paragraph'>The EDEN CUP is designed from product to packaging to make switching from traditional period care a more comfortable, convenient and easier experience!</p>
+                    <p class='productSection__paragraph'>The EDEN CUP is a 100% silicon <a href='https://www.healthline.com/health/womens-health/menstrual-cup'>menstrual cup</a> designed and ready for whatever your period throws at you. Eden Cup was created by our founder Georgina to be flexible and adapt to your body's natural shape to form a secure and leak-free seal. Combined with our no waste ethos and our 100% recyclable packaging, you have no reason to ever use tampons or pads again!</p>
+                    <p class='productSection__paragraph quote'>Love your Body and the Planet!
+                    </p>
                     <!-- <ul>
                         <li class='productSection__item'>Convenience - Use it up to 12 hours</li>
                         <li class='productSection__item'>Comfort - Ribbed and curved design</li>
@@ -79,7 +101,7 @@
                 <p class='imageSection__paragraph'>Layla research study </p>
             </div>
         </section>
-        <section class='benefitSection'>
+        <section class='benefitSection' id='benefitSection'>
             <h2 class='benefitSection__header header'>BENEFITS OF EDEN</h2>
             <div class='benefitSection__text wrapper'>
                 
@@ -91,25 +113,27 @@
                                 <img src="assets/icons/noun_Menstrual Cup_1015425-svg.png" alt="menstrual cup">
                             </div>
                             <div class='textContainer'>
-                                <p class='benefitSection__figCaption'><span>Comfort:</span> Bendable and large curved design makes the Eden Cup even more comfy </p>
+                                <p class='benefitSection__figCaption'><span>Comfort:</span> The flexible, silicone adapts to your body making it comfortable and easy to wear </p>
                             </div>
                         </div>
-                        <div class='benefitSection__galleryIcon'>
-                            <div class='imageContainer'>
-                                <img src="assets/icons/water-drop.png" alt="menstrual cup">
-                            </div>
-                            <div class='textContainer'>
-                                <p class='benefitSection__figCaption'><span> Hygenic:</span> EdenCup is 100% Silicon, FDA approved and has zero chemicals</p>
-                            </div>
-                        </div>
-                        <div class='benefitSection__galleryIcon benefitSection__galleryIcon--active'>
+                        <div class='benefitSection__galleryIcon benefitSection__galleryIcon'>
                             <div class='imageContainer'>
                                 <img src="assets/icons/time-left.png" alt="menstrual cup">
                             </div>
                             <div class='textContainer'>
-                                <p class='benefitSection__figCaption'><span>Convenience:</span> You can use Eden Cup for up to 12 hours. Even if you empty it away from home, just empty, wipe and re-insert </p>
+                                <p class='benefitSection__figCaption'><span>Convenience:</span> You can wear your Eden Cup for up to 10 hours
+                                    without worry</p>
                             </div>
                         </div>
+                        <div class='benefitSection__galleryIcon benefitSection__galleryIcon--active'>
+                            <div class='imageContainer'>
+                                <img src="assets/icons/water-drop.png" alt="menstrual cup">
+                            </div>
+                            <div class='textContainer'>
+                                <p class='benefitSection__figCaption'><span> Hygenic:</span> The Eden Cup is made from medical grade silicone, and is FDA approved. It contains no chemicals often found in tampons and pads.</p>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class='benefitSection__imagePart'>
                         <div class='benefitSection__imageHolder'>
@@ -129,14 +153,14 @@
                                 <img src="assets/icons/garbage.png" alt="menstrual cup">
                             </div>
                             <div class='textContainer'>
-                                <p class='benefitSection__figCaption'><span>Lower Waste:</span> 1 Eden Cup can last over a year... i.e. over 500 tampons or 99% less wastage </p> </div> 
+                                <p class='benefitSection__figCaption'><span>Zero Waste Product:</span> Eden Cups last a lifetime, the equivalent of over 10,000 tampons.  </p> </div> 
                             </div> 
                         <div class='benefitSection__galleryIcon'>
                             <div class='imageContainer'>
                                 <img src="assets/icons/closed-mail-envelope.png" alt="menstrual cup">
                             </div>
                             <div class='textContainer'>
-                                <p class='benefitSection__figCaption'><span>Packaging:</span> Buy through the site and we deliver with our own custom packaging to limit waste </p>
+                                <p class='benefitSection__figCaption'><span>Zero Waste Packaging:</span> All our packaging materials and the handy cup storage bag are 100% recyclable.</p>
                             </div>
                         </div>
                         <div class='benefitSection__galleryIcon benefitSection__galleryIcon--active'>
@@ -144,7 +168,7 @@
                                     <img src="assets/icons/money-svg.png" alt="menstrual cup">
                                 </div>
                             <div class='textContainer'>
-                                <p class='benefitSection__figCaption'><span> Give to Charity:</span> We put our money where our mouth is. For every cup you buy, we donate to our local UK wildlife trust. We care about our countryside and want to keep it the way it is</p>
+                                <p class='benefitSection__figCaption'><span> Carbon Footprint:</span> We look beyond materials to our other operations to try and limit our wider impact on planet earth</p>
                             </div>
                         </div>
                         
@@ -170,7 +194,7 @@
                     <form>
                         <div class="benefitSection__toggleForm">
                             <input type="checkbox" id="switch1">
-                            <label for="switch1" class="toggleLabel">click to toggle to Eden's environmental benefits</label>
+                            <label for="switch1" class="toggleLabel">Click to toggle between Eden's unique benefits</label>
                         </div>
                 
                     </form>
@@ -178,7 +202,7 @@
                 </div>
             </div>
         </section>
-        <section class='howItWorksSection section'>
+        <section class='howItWorksSection section' id='howItWorksSection'>
             <h2 class='howItWorksSection__header header'>HOW DOES IT WORK?</h2>
             <div class='howItWorksSection__text wrapper'>
                 <h3>It's super simple. Just follow the below steps to get started with your Eden Cup:</h3>
@@ -186,28 +210,28 @@
 
                     <div class='howItWorksSection__galleryIcon'>
                         <div class='imageContainer'>
+                            <img src="assets/icons/noun_Boil_156155 (2).png" alt="menstrual cup">
+                        </div>
+                        <div class='textContainer'>
+                            <p class='howItWorksSection__figCaption'>1. Boil in a  saucepan for 5-7minutes. Allow to cool.</p>
+                        </div>
+                        
+                    </div>
+                    <div class='howItWorksSection__galleryIcon'>
+                        <div class='imageContainer'>
                             <img src="assets/icons/noun_Menstrual Cup_1015425-svg.png" alt="menstrual cup">
                         </div>
                         <div class='textContainer'>
-                            <p class='howItWorksSection__figCaption'>1. Squeeze, fold and Insert the Cup</p>
+                        <p class='howItWorksSection__figCaption'>2. Squeeze, fold and insert the cup </p>
                         </div>
-                        
+
                     </div>
                     <div class='howItWorksSection__galleryIcon'>
                         <div class='imageContainer'>
                             <img src="assets/icons/time-left.png" alt="menstrual cup">
                         </div>
                         <div class='textContainer'>
-                        <p class='howItWorksSection__figCaption'>2. Wear it for up to 12 hours</p>
-                        </div>
-
-                    </div>
-                    <div class='howItWorksSection__galleryIcon'>
-                        <div class='imageContainer'>
-                            <img src="assets/icons/logout.png" alt="menstrual cup">
-                        </div>
-                        <div class='textContainer'>
-                            <p class='howItWorksSection__figCaption'>3. Remove the Cup</p>
+                            <p class='howItWorksSection__figCaption'>3. Wear for up to 10 hours</p>
                         </div>
                     </div>
                     <div class='howItWorksSection__galleryIcon'>
@@ -215,13 +239,14 @@
                             <img src="assets/icons/bubbles.png" alt="menstrual cup">
                         </div>
                         <div class='textContainer'>
-                            <p class='howItWorksSection__figCaption'>4. Empty, wash and reuse</p>
+                            <p class='howItWorksSection__figCaption'>4. Remove, empty, wash and reuse</p>
                         </div>
                         
                     </div>
                 </div>
 
-                <button class='howItWorksSection__button buyNow2'>Click for full Instructions</button>
+                <button class='howItWorksSection__button buyNow2'>Click to see our instructions</button>
+                <a class='howToVideo' href='https://www.youtube.com/watch?v=rnuomsxjBOs'>or watch a how to video</a>
                 
             </div>
         </section>
@@ -230,8 +255,18 @@
         <h2 class='footer__header header'>GET IN CONTACT<h2></h2>
         <div class='footer__headerContent wrapper'>
             <div class='footer__headerText'>
-                <p class='footer__paragraph '>We're so excited kick-off our journey and create a community around our Eden beliefs. We have lots of ideas for the Eden Cup and beyond so get involved and share your experiences with us. After all, you are the focus of all our work!</p>   
-                <button class='buyNow2'>Contact us</button>
+                <p class='footer__paragraph '>We’re so excited for you to begin your journey and that you want to be part of the Eden community! We have lots of ideas for our Eden cups, and sustainable period care, and would love for you to get involved and share your experiences with
+                us.</p> 
+            </div>
+            
+            <div class='footer__links'>
+                    
+                    <a class='socialIcon email' href=''><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                    <div class='headerSection__imageContainer logoContainer'>
+                        <img src="assets/edenBranding&Product/heartLogo2.png" />
+                    </div>
+                    <a class='socialIcon instagram' href=''><i class="fab fa-instagram"aria-hidden="true"></i></a>
+                    
             </div>
         </div>
     </footer>

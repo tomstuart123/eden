@@ -1,13 +1,16 @@
 .footer {
-    height: 400px;
+    height: 450px;
     position: relative;
     z-index: 1;
     background: $darkColour;
     background-blend-mode: saturation;
     background-size: cover;
     background-position: center;
-    @include media(750px) {
+    @include media(900px) {
        height: 500px;
+     }
+    @include media(650px) {
+       height: 550px;
      }
 }
 
@@ -21,6 +24,8 @@
 .footer__headerContent {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    height: auto;
 }
 
 
@@ -35,14 +40,82 @@
 }
 
 
-.footer__headerText .footer__paragraph, .footer .buyNow2 {
-    margin-top: 50px;
-    text-align: center;
-    margin-top: 50px;
+.footer__links {
+    display: flex;
+    justify-content: center;
 }
 
-.footer .buyNow2 {
-    margin: 0 auto;
-    display: block;
-    margin-top: 50px;
+.footer__links a {
+    color: $accentColourMid;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 0 150px;
+    padding-top: 50px;
+    @include media(1000px) {
+        margin: 0 100px;
+     } 
+
+     @include media(750px) {
+        margin: 0 50px;
+     } 
+     @include media(450px) {
+        padding-top: 20px;
+     } 
 }
+
+
+.footer__links a:hover {
+    color: white;
+}
+
+.footer__headerText .footer__paragraph, .footer .logoContainer{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer .logoContainer{
+    @include media(450px) {
+        display: none;
+     } 
+}
+
+.socialIcon:hover {
+    // font-size: 2.2rem;
+    position: relative;
+}
+
+.socialIcon:hover::before {
+    position: absolute;
+    top: 125px;
+    width: 150px;
+    font-size: 0.7rem;
+    color: white;
+
+}
+
+.instagram:hover::before {
+    content: 'Go to Instagram';
+    left: -40px;
+    font-size: 1rem;
+    @include media(1000px) {
+        font-size: 0.9rem;
+     } 
+}
+
+.email:hover::before {
+    content: 'Contact Email';
+    left: -30px;
+    font-size: 1rem;
+     @include media(1000px) {
+        font-size: 0.9rem;
+     } 
+}
+
+
+// .footer .buyNow2 {
+//     margin: 0 auto;
+//     display: block;
+//     margin-top: 50px;
+// }
+
