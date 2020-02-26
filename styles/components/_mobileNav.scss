@@ -35,8 +35,11 @@
 
 .hamburger-inner {
   display: block;
-  top: 50%;
+  top: 100%;
   margin-top: -2px; 
+  @include media(700px) {
+        top: 60%;
+    } 
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;

@@ -12,6 +12,10 @@
         // URGENT BENEFITS / HOW TO / Contact
             // update text
         // Switch Toggle
+        // Toggle animation / button animation 
+        // Proper contact form
+        // Quote section input
+        //
 
     // BACK END
         // pay for shopify

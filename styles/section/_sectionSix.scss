@@ -1,11 +1,8 @@
 .benefitSection {
     height: 650px;
     position: relative;
-    @include media(900px) {
-       height: 1000px;
-     }
 
-     @include media(700px) {
+     @include media(1000px) {
        height: 1350px;
      }
      @include media(450px) {
@@ -15,7 +12,7 @@
 
 .benefitSection__header {
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
@@ -38,8 +35,10 @@
 //     margin: 0 auto;
 // }
 .benefitSection__subheaderThree {
-    line-height: 150%;
-    @include media(700px) {
+    // line-height: 200%;
+    margin-bottom: 20px;
+    width: 100%;
+    @include media(1000px) {
         text-align: center;
     }
 }
@@ -51,7 +50,7 @@
     // height: 100%;
     margin-bottom: 50px;
     justify-content: space-between;
-    @include media(900px) {
+    @include media(1000px) {
        flex-wrap: wrap;
      }
     
@@ -65,7 +64,7 @@
     flex-wrap: wrap;
     margin-top: 50px;
     width: 60%;
-    @include media(900px) {
+    @include media(1000px) {
         width: 100%;
      }
 }
@@ -75,7 +74,7 @@
     flex-direction: row;
     width: 50%;
     margin-top: 50px;
-    @include media(700px) {
+    @include media(1000px) {
         width: 100%;
         flex-direction: column;
     }
@@ -89,14 +88,14 @@
 .benefitSection__iconGallery .imageContainer {
     width: 80px;
     height: 75px;
-    @include media(700px) {
+    @include media(1000px) {
         margin: 0 auto; 
     }
 }
 
 .benefitSection__iconGallery .textContainer {
     width: 200px;
-    @include media(700px) {
+    @include media(1000px) {
         width: calc(100%);
         margin-top: 30px;
     }
@@ -104,7 +103,7 @@
 
 .benefitSection__galleryIcon--active .textContainer {
     width: calc(100% - 80px);
-    @include media(700px) {
+    @include media(1000px) {
         width: calc(100%);
     }
 }
@@ -115,7 +114,7 @@
     width: 100%;
     text-align: left; 
     padding-left: 20px;
-    @include media(700px) {
+    @include media(1000px) {
         text-align: center; 
     }
 }
@@ -129,7 +128,7 @@
 .benefitSection__imagePart {
     margin-top: 50px;
     width: 35%;
-    @include media(900px) {
+    @include media(1000px) {
        width: 100%;
      }
 }
@@ -140,7 +139,7 @@
     border-radius: 5%;
     height: 330px;
     padding: 40px 0;
-    @include media(1050px) {
+    @include media(1000px) {
        height: 280px;
      }
 }

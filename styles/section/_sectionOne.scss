@@ -25,7 +25,10 @@
 .headerSection__headerContent {
     display: flex;
     justify-content: flex-start;
-    height: 550px;
+    height: 525px;
+    @include media(700px) {
+       height: 550px;
+     }
     @include media(450px) {
        height: 90%;
      }
@@ -125,8 +128,8 @@
 }
 
 .headerSection__headerButtonArea .headerSection__logo .logoContainer {
-  height: 155px;
-  width: 155px;
+  height: 165px;
+  width: 165px;
   @include media(1000px) {
       height: 135px;
       width: 135px;

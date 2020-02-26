@@ -20,7 +20,6 @@ h1, h2, h3, h4 {
 
 ul {
   display: block;
-  list-style-type: disc;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   -webkit-margin-after: 0;
@@ -272,18 +271,24 @@ a {
 }
 
 .logoContainer {
-  width: 120px;
+  width: 170px;
+}
+
+@media only screen and (max-width: 700px) {
+  .logoContainer {
+    width: 130px;
+  }
 }
 
 .dropdown {
   z-index: -1;
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50%;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -292,19 +297,18 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 95%;
+  width: 100%;
   text-align: left;
-  margin-right: 2.5%;
   padding: 20px;
   padding-left: 20px;
   border-radius: 2%;
-  opacity: 0.8;
+  opacity: 0.95;
 }
 
 @media only screen and (max-width: 700px) {
   .dropdown {
     opacity: 0.95;
-    height: 75%;
+    height: 100%;
     margin-right: 0%;
     width: 100%;
   }
@@ -329,7 +333,7 @@ a {
   -webkit-transition: font-size 0.5s;
   transition: font-size 0.5s;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   margin-top: 10px;
 }
 
@@ -422,8 +426,14 @@ img {
 
 .hamburger-inner {
   display: block;
-  top: 50%;
+  top: 100%;
   margin-top: -2px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hamburger-inner {
+    top: 60%;
+  }
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
@@ -524,7 +534,7 @@ img {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__toggleForm {
     right: 30%;
   }
@@ -686,7 +696,13 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 550px;
+  height: 525px;
+}
+
+@media only screen and (max-width: 700px) {
+  .headerSection__headerContent {
+    height: 550px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -844,8 +860,8 @@ img {
 }
 
 .headerSection__headerButtonArea .headerSection__logo .logoContainer {
-  height: 155px;
-  width: 155px;
+  height: 165px;
+  width: 165px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -860,20 +876,26 @@ img {
 }
 
 .aboutSection {
-  height: 370px;
+  height: 380px;
   background: #fef9f0;
   padding: 50px;
 }
 
 @media only screen and (max-width: 900px) {
   .aboutSection {
-    height: 450px;
+    height: 460px;
   }
 }
 
 @media only screen and (max-width: 750px) {
   .aboutSection {
-    height: 525px;
+    height: 540px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutSection {
+    height: 570px;
   }
 }
 
@@ -903,7 +925,12 @@ img {
 }
 
 .aboutSection__paragraph {
-  margin-top: 40px;
+  margin-top: 20px;
+}
+
+.italic {
+  margin-top: 20px;
+  font-style: italic;
 }
 
 .productSection {
@@ -1279,13 +1306,7 @@ img {
   position: relative;
 }
 
-@media only screen and (max-width: 900px) {
-  .benefitSection {
-    height: 1000px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection {
     height: 1350px;
   }
@@ -1299,7 +1320,7 @@ img {
 
 .benefitSection__header {
   margin-top: 60px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .benefitSection__subheaderSection {
@@ -1316,10 +1337,11 @@ img {
 }
 
 .benefitSection__subheaderThree {
-  line-height: 150%;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__subheaderThree {
     text-align: center;
   }
@@ -1339,7 +1361,7 @@ img {
           justify-content: space-between;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__toggleSectionOne, .benefitSection__toggleSectionTwo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1360,7 +1382,7 @@ img {
   width: 60%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__iconGallery {
     width: 100%;
   }
@@ -1378,7 +1400,7 @@ img {
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__galleryIcon {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -1397,7 +1419,7 @@ img {
   height: 75px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__iconGallery .imageContainer {
     margin: 0 auto;
   }
@@ -1407,7 +1429,7 @@ img {
   width: 200px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__iconGallery .textContainer {
     width: calc(100%);
     margin-top: 30px;
@@ -1418,7 +1440,7 @@ img {
   width: calc(100% - 80px);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__galleryIcon--active .textContainer {
     width: calc(100%);
   }
@@ -1431,7 +1453,7 @@ img {
   padding-left: 20px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__figCaption {
     text-align: center;
   }
@@ -1446,7 +1468,7 @@ img {
   width: 35%;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__imagePart {
     width: 100%;
   }
@@ -1460,7 +1482,7 @@ img {
   padding: 40px 0;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1000px) {
   .benefitSection__imageHolder {
     height: 280px;
   }
@@ -1481,8 +1503,86 @@ img {
   max-height: 100%;
 }
 
+/* SECTION TOP */
+.headerSectionPrivacy {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 38, 0.5)), to(rgba(9, 8, 16, 0.5))), url("../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg");
+  background: linear-gradient(rgba(38, 38, 38, 0.5), rgba(9, 8, 16, 0.5)), url("../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg");
+  background-size: cover;
+  background-position: 50% 70%;
+  -webkit-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+@media only screen and (max-width: 700px) {
+  .headerSectionPrivacy {
+    height: 50vh;
+  }
+}
+
+.headerSection__headerButtonAreaPrivacy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 50px;
+}
+
+.privacySection {
+  background: #fef9f0;
+  padding: 50px 0;
+}
+
+.privacySection ul, .privacySection li {
+  list-style-type: circle;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.dropdown li {
+  text-align: left;
+  list-style-type: none;
+  -webkit-transition: font-size 0.5s;
+  transition: font-size 0.5s;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .dropdown li {
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .dropdown li {
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.headerTerms {
+  margin-bottom: 30px;
+}
+
+.privacySection a {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
 .footer {
-  height: 450px;
+  height: 550px;
   position: relative;
   z-index: 1;
   background: #1e1a34;
@@ -1493,13 +1593,19 @@ img {
 
 @media only screen and (max-width: 900px) {
   .footer {
-    height: 500px;
+    height: 575px;
   }
 }
 
 @media only screen and (max-width: 650px) {
   .footer {
-    height: 550px;
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    height: 700px;
   }
 }
 
@@ -1621,6 +1727,34 @@ img {
 @media only screen and (max-width: 1000px) {
   .email:hover::before {
     font-size: 0.9rem;
+  }
+}
+
+.footer__links2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__links2 a {
+  color: #f4f4f4;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-top: 30px;
+  width: 150px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  .footer__links2 a {
+    padding-top: 50px;
   }
 }
 /*# sourceMappingURL=main.css.map */

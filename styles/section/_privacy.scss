@@ -1,0 +1,77 @@
+/* SECTION TOP */
+.headerSectionPrivacy {
+
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    // z-index: 1;
+
+    // background: linear-gradient( rgba(38, 38, 38, 0.5), rgba(0, 0, 0, 0.5) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    background: linear-gradient( rgba(38, 38, 38, 0.5), rgba(9, 8, 16, 0.5) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    // background: linear-gradient( rgba(92, 92, 92, 0.5),rgb(17, 15, 30) ), url('../assets/lifestylePics/sam-manns-V5Owjg-ZNto-unsplash.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+    transition: background-position 1s;
+    @include media(700px) {
+        height: 50vh;
+     }
+
+    
+}
+
+.headerSection__headerButtonAreaPrivacy {
+  width: 100%;
+  display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+    @include media(450px) {
+     }
+}
+
+.privacySection {
+    background: $accentColourLight;
+    padding: 50px 0;
+}
+
+
+.privacySection ul, .privacySection li {
+    list-style-type: circle;
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.dropdown li {
+
+    text-align: left;
+    list-style-type: none;
+    transition: font-size 0.5s;
+    margin: 0 auto;
+       margin-bottom: 20px;
+        margin-bottom: 20px;
+     @include media(700px) {
+       margin-bottom: 15px;
+        margin-bottom: 15px;
+    } 
+
+    @include media(500px) {
+        margin-bottom: 15px;
+        margin-bottom: 15px;
+    } 
+    
+    //  @include mq-desktop {
+    //    font-size: 2rem;
+    //    margin-bottom: 20px;
+    //     margin-top: 10px;
+    // } 
+
+}
+
+.headerTerms {
+    margin-bottom: 30px;
+}
+
+.privacySection a {
+    font-size: 1rem;
+    text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 .footer {
-    height: 450px;
+    height: 550px;
     position: relative;
     z-index: 1;
     background: $darkColour;
@@ -7,10 +7,13 @@
     background-size: cover;
     background-position: center;
     @include media(900px) {
-       height: 500px;
+       height: 575px;
      }
     @include media(650px) {
-       height: 550px;
+       height: 600px;
+     }
+     @include media(450px) {
+       height: 700px;
      }
 }
 
@@ -112,10 +115,28 @@
      } 
 }
 
+.footer__links2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
-// .footer .buyNow2 {
-//     margin: 0 auto;
-//     display: block;
-//     margin-top: 50px;
-// }
+.footer__links2 a {
+    color: rgb(244, 244, 244);
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding-top: 30px;
+    width: 150px;
+    text-align: center;
+    @include media(1000px) {
+        // margin: 0 20px;
+     } 
+
+     @include media(750px) {
+
+     } 
+     @include media(450px) {
+        padding-top: 50px;
+     } 
+}
 
